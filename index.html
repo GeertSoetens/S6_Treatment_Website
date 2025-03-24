@@ -10,7 +10,9 @@
 <body>
     <div class="navbar">
         <div class="navleft">
-            <img src="/content/rememberinc_full.svg" alt="" width="300">
+            <a href="index.html">
+                <img src="/content/rememberinc_full.svg" alt="" width="300">
+            </a>
             <s>About</s>
             <s>Promotions</s>
             <s>Schedule Appointment</s>
@@ -27,6 +29,9 @@
             <hr>
             <p>The End</p>
             <p>We're coming for Lacuna, and you cannot stop us. We will remember.</p>
+            <div id="videothumbnail">
+                <img src="content/playicon.svg" alt="" width="65px">
+            </div>
             <hr>
             <p>Error: 500 Internal Server Error</p>
             <p>Failed to retrieve data! Please contact an administrator.</p>
@@ -52,12 +57,14 @@
     </div>
 
     <!-- Video Lightbox -->
-    <div class="overlay">
-        <div class="closebtn">
-            X
+    <div id="overlay">
+        <div id="closebtn">
+            <p>X</p>
         </div>
         <div class="videoplayer">
-            <video src="content/Treatment Trailer.mov" controls="true"></video>
+            <video id="video" controls="true">
+                <source src="content/Treatment Trailer.mov" type="video/mp4">
+            </video>
         </div>
     </div>
 </body>

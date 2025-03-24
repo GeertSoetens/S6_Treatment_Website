@@ -142,7 +142,7 @@ body {
     background-color: #57799b;
 }
 
-.overlay {
+#overlay {
     position: fixed;
     display: flex;
 
@@ -161,7 +161,11 @@ body {
     padding: 100px;
 }
 
-.closebtn {
+#overlay video {
+    max-height: 90vh;
+}
+
+#closebtn {
     color: white;
     font-size: 50px;
     font-family: monospace;
@@ -174,13 +178,35 @@ body {
 
     position: absolute;
 
-    top: 50px;
-    right: 150px;
+    top: 25px;
+    right: 25px;
 
     background-color: black;
     padding: 0 15px;
 }
 
-.closebtn:hover {
+#closebtn:hover {
     color: red;
+}
+
+#videothumbnail {
+    background-image: url("content/videothumbnail.png");
+    background-size: contain;
+    margin-bottom: 5px;
+
+    height: 130px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    color: red;
+
+    font-weight: bold;
+}
+
+#videothumbnail u {
+    text-shadow: black 0px 0px;
 }
