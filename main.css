@@ -50,6 +50,8 @@ body {
     display: flex;
     align-items: center;
 
+    justify-content: space-between;
+
     padding: 31px 200px;
 }
 
@@ -59,4 +61,72 @@ body {
     gap: 45px;
 
     text-decoration: underline;
+}
+
+.maincontent {
+    display: flex;
+
+    margin: 32px 0 0 200px;
+
+    gap: 20px;
+}
+
+.leftcontent {
+    background-color: #3b4248;
+    width: 404px;
+    height: 500px; /* temp */
+    padding: 16px;
+
+    color: white;
+}
+
+.leftcontent hr {
+    color: white;
+}
+
+.leftcontent p {
+    margin: 8px 0;
+}
+
+.rightcontent {
+    display: grid;
+    width: 100%;
+    margin-right: 200px;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+        "header header header"
+        "button1 button2 button3"
+        "button4 button4 button4";
+}
+
+.portaltitle {
+    grid-area: header;
+    height: 32px;
+}
+
+#button1 {
+    grid-area: button1;
+
+    background-color: #57799b;
+}
+
+#button2 {
+    grid-area: button2;
+
+    background-color: #57799b;
+}
+
+#button3 {
+    grid-area: button3;
+
+    background-color: #57799b;
+}
+
+#button4 {
+    grid-area: button4;
+
+    background-color: #57799b;
 }
