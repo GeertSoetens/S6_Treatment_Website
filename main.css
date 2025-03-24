@@ -107,6 +107,17 @@ body {
     height: 32px;
 }
 
+#button1, #button2, #button3, #button4 {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    color: white;
+}
+
 #button1 {
     grid-area: button1;
 
@@ -129,4 +140,47 @@ body {
     grid-area: button4;
 
     background-color: #57799b;
+}
+
+.overlay {
+    position: fixed;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+
+    padding: 100px;
+}
+
+.closebtn {
+    color: white;
+    font-size: 50px;
+    font-family: monospace;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    float: right;
+    user-select: none;
+
+    position: absolute;
+
+    top: 50px;
+    right: 150px;
+
+    background-color: black;
+    padding: 0 15px;
+}
+
+.closebtn:hover {
+    color: red;
 }
