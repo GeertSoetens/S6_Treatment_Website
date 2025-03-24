@@ -210,3 +210,64 @@ body {
 #videothumbnail u {
     text-shadow: black 0px 0px;
 }
+
+/* DEFAULT STYLES
+
+.hero = wide, high image with content inside
+.flex = flex container with settings row & default gap. Can contain images & text.
+
+*/
+
+.hero h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.hero h1 span {
+    color: #ffde59;
+}
+
+.flex h1 {
+    display: black;
+}
+
+.flex h1 span {
+    color: #57799b;
+}
+
+.hero {
+    width: 100vw;
+    padding: 200px;
+    
+    display: flex;
+    justify-content: right;
+
+    background-color: dark;
+}
+
+.hero div {
+
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+
+    display: block;
+    min-height: 150px;
+    max-width: 50%;
+    padding: 25px;
+}
+
+.flex {
+    display: flex;
+    gap: 50px;
+
+    padding: 50px 200px;
+}
+
+.flex image {
+    flex-grow: 1;
+}
+
+p {
+    margin-bottom: 15px;
+}
