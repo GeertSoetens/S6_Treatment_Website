@@ -278,6 +278,7 @@ body {
 .flex img {
     flex-grow: 1;
     margin: 0 auto;
+    max-height: 75vh;
 }
 
 p {
