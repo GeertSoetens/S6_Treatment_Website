@@ -63,6 +63,8 @@ body {
     text-decoration: underline;
 }
 
+
+
 .maincontent {
     display: flex;
 
@@ -86,6 +88,10 @@ body {
 
 .leftcontent p {
     margin: 8px 0;
+}
+
+.leftcontent h2 {
+    color: white;
 }
 
 .rightcontent {
@@ -230,6 +236,7 @@ body {
 
 .flex h1 {
     display: black;
+    margin-bottom: 15px;
 }
 
 .flex h1 span {
@@ -237,13 +244,15 @@ body {
 }
 
 .hero {
-    width: 100vw;
+    width: 100%;
     padding: 200px;
     
     display: flex;
     justify-content: right;
 
     background-color: dark;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero div {
@@ -261,13 +270,73 @@ body {
     display: flex;
     gap: 50px;
 
-    padding: 50px 200px;
+    padding: 50px 200px 0;
+    
+    width: 100%;
 }
 
-.flex image {
+.flex img {
     flex-grow: 1;
+    margin: 0 auto;
 }
 
 p {
     margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+ul:last-child, ol:last-child, li:last-child {
+    margin-bottom: 25px;
+}
+
+a {
+    color: #9e856b;
+
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #57799b;
+}
+
+h2 {
+    color: black;
+}
+
+h2 span {
+    color: #57799b;
+}
+
+.arrowlist {
+    list-style-type: "▼ ";
+}
+
+.arrowlist p {
+    margin: 0;
+}
+
+.arrowlist li {
+    margin-bottom: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+
+    height: 200px;
 }

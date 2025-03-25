@@ -10,7 +10,6 @@ overlaybackground.style.display = "none";
 function toggleLightbox() {
 
     if (overlayIsOpen) {
-        console.log("CLOSING OVERLAY BABY!!!");
         // Close overlay
         overlaybackground.style.display = "none";
         overlayIsOpen = false;
